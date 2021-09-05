@@ -4,7 +4,7 @@ Un kit de cosas echas en HTML, para poder usar en tu Stream.
 # Chat
 Muestra en tiempo real lo que escrie el chat.
 
-![Chat](/assets/chat01.jpg)
+![Chat](/assets/Chat01.jpg)
 
 ## Configuracion
 En el archivo `js/chat.js`, encontrar un apartado en donde podras configurarlo a tu gusto.
