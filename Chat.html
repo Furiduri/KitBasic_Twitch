@@ -1,18 +1,44 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Chat Twitch</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="stylesheet" type="text/css" media="screen" href="css/bulma.min.css">    
-    <link rel='stylesheet' type='text/css' media='screen' href='css/animate.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/magic.min.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/Chat.css'>
     <script src="js/tmi.min.js"></script>
     <script src="js/utils.js"></script>
-    <script src='js/chat.js'></script>
+    <script src="js/twemoji.min.js"></script>
 </head>
+
 <body>
     <div id="content" class="content"></div>
+    <!-- Html Estructura del mensaje de chat
+        <div class="chat-line visible" channel="furiduri" message-id="ca430f16-b522-4fb9-b899-fba6a902b78c"
+            user-id="35848670" channel-id="35848670" username="furiduri">
+            <div class="chat-line-inner">
+                <span class="badges">
+                    <img
+                    src="https://static-cdn.jtvnw.net/badges/v1/{badgeID}/1"
+                    badgetype="broadcaster" alt="broadcaster" class="badge">
+                </span>
+                <span></span>
+                <span class="user-name">
+                    {Usuario}
+                </span>
+                <span class="message-colon">
+                    {config.colon}
+                </span>
+                <span class="message">
+                    {Mensaje}
+                </span>
+            </div>
+            <span class="timespan">{hora 24hrs}:{minuto}</span>
+        </div>
+    -->
+    <script src='js/chat.js'></script>
 </body>
+
 </html>

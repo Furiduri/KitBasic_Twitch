@@ -1,36 +1,68 @@
-html{
-    background: none;
-    overflow: hidden;
-    height: 100vh;    
-    font-size: 1.3em;
-}
+@import url("https://fonts.googleapis.com/css?family=Ropa+Sans");
 body {
-    font-family: monospace;
-    letter-spacing: -1px;
-    width: max-content;
-    background: none;
-    color: white;
-}
-div#content {
-    position: fixed;
-    bottom: 0;
-    left: .5rem;
-}
-.box.message {
-    background-color: black;
-    margin-bottom: .5rem;
-    width: max-content;
-    padding: .5rem .5rem .5rem .5rem;
-    max-width: 20em;
-}
-.message .name {
-    font-weight: bold;
+  font-family: "Ropa Sans", sans-serif;
+  font-size: 18px;
+  overflow: hidden;  
+  height: 100vh;
 }
 
-.message .msg {
-    color: white;
+#content {
+  position: absolute;
+  bottom: 10px;
+  width: 400px;
 }
-.message .time {
-    font-size: .7em;
-    color: whitesmoke;
+
+.chat-line {
+  /* transition: opacity 2s, max-height 1s, margin-top 1s; */
+  -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
+.chat-line.visible {
+  margin-top: 10px;
+  max-height: 300px;
+  /* transition: opacity 2s, max-height 1s, margin-top 300ms; */
+  -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.chat-line .chat-line-inner {  
+  background-color: rgba(0, 0, 0, 0.774);
+  padding: 10px;
+  overflow-wrap: break-word;
+  border-radius: 2rem;
+  box-shadow: inset 4px 4px 0px 0px #4caf50a3;
+}
+.chat-line .chat-line-inner .badges img.badge {
+  margin-right: 6px;
+  vertical-align: text-bottom;
+  width: 18px;
+  height: 18px;
+}
+.chat-line .chat-line-inner.admin .message {
+  opacity: 0.4;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.message{  
+  color: white;
+}
+
+.message img {
+  vertical-align: text-bottom;
+}
+.message img.emoji {
+  width: 20px;
+}
+
+.timespan {
+  color: white;
+  font-size: small;
+  font-weight: 700;
+}
+
